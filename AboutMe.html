@@ -1,0 +1,118 @@
+<!Doctype>
+<html>
+  <html lang= "en"> 
+	<head>
+        <meta charset="utf-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+		
+		<style>
+            
+		.wrapper {
+			display:grid;
+			grid-template-columns: repeat(4, 1fr);
+			grid-auto-rows: minmax(100px, auto);
+			column-gap:15px;
+			row-gap: 70px;
+			grid-template-areas: 
+			'a a a a'
+			'b b c c'
+			'b b c c'
+			'b b d d';
+		}
+		
+		.header {
+			background-color:mediumpurple;
+			grid-area: a;
+		}
+		
+		.mainContent {
+            background-color:rgba(230,230,250,0.9);
+			grid-area: b;
+		}
+		
+		.twoUp {
+			background-color:rgba(230,230,250,0.9);
+			grid-area: c;		
+		}
+		
+		.oneUpA {
+			background-color:rgba(230,230,250,0.9);
+			grid-area: d;		
+		}
+
+		
+		h1 {
+			text-align:center;
+			font-family: 'Righteous', cursive;'
+			color:black;
+			font-size:40px;
+		}
+		
+		p {
+            font-family: 'Righteous', cursive;
+			line-height:30px;
+			font-size:30px;
+            color:black;  
+			padding:8px;
+		}
+		
+		.gridImg {
+			width:100%;
+			min-height:300px;
+			object-fit: cover;
+		}
+		
+		
+	<link rel="stylesheet" type="text/css" href="style.css">	
+	</head>
+<!--Media query desktop-->
+    <link rel="stylesheet" media="only screen and (min-width: 961px)" href="desktop.css">
+<!--Media query for tablet-->
+    <link rel="stylesheet" media="only screen and (min-width: 961px)" href="tablet.css">
+<!--Media query phone-->
+    <link rel="stylesheet" media="only screen and (max width:580px)" href="mobile.css">
+       </style>   
+	<body>
+		<div class="wrapper">        
+			<div class="header">
+				<h1><a href= "index.html">About Me! </a></h1>
+			</div>
+			
+			<div class="mainContent">
+        <article>
+				<p>My name is Joseph Lam. I'm currently a student at BMCC. My Major is Computer Network Technology. I plan to transfer out and attend a four year college to complete my degree. Throughout my life I've held several jobs. Every one of these jobs has given me several outputs on life and how to succeed. I work and play Paintball upstate. I've been playing for almost a decade. I've been dating the same girl  since sophmore year of highschool. 
+        
+                    </p>
+                    
+                    <p>  
+
+</p>
+            <p><a href= "next.html">next page</a></p>
+        </article>
+        </div>
+       
+        <div>
+        </div>
+			
+			<div class="twoUp">
+				<img class="gridImg" src="images/queerbaiting2x.jpg" alt="queerbaiting">
+
+			</div>			
+			
+			<div class="oneUpA">
+				<img class="gridImg" src="images/euphoria2x.jpg" alt="Euphoria">
+			</div>
+            <!--
+			<div class="images"> 
+            <img src="images/queerbaiting.jpg" srcset="images/queerbaiting2x.jpg" alt="queerbaiting" width="400" height="auto">
+            <img src="images/euphoria.jpg" srcset="images/euphoria2x.jpg" alt="euphoria" width="400" height="auto"></div>
+           --> 
+                 
+		</div>
+
+	</body>
+</html> 
